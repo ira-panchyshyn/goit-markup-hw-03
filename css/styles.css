@@ -44,6 +44,12 @@ img {
   color: var(--accent-color);
 }
 
+.paragraph-common {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
 /*--------------- LOGO ----------------- */
 
 .logo {
@@ -100,30 +106,22 @@ img {
 }
 
 .header-link {
+  color: var(--main-text-color);
+}
+
+.header-common {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
 }
 
 .header-link-active {
   color: var(--accent-color);
 }
 
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--paragraph-text-color);
-}
-
+.header-mail,
 .header-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
 }
 
@@ -195,10 +193,7 @@ img {
 }
 
 .advantages-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
 }
 
@@ -263,11 +258,8 @@ img {
 }
 
 .team-role {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
 }
 
@@ -322,10 +314,7 @@ img {
 }
 
 .projects-type {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
 }
 
@@ -377,19 +366,18 @@ img {
   font-style: normal;
 }
 
-.footer-location {
+.footer-common {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-location {
   color: var(--alternative-text-color);
 }
 
 .footer-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
