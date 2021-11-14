@@ -11,6 +11,8 @@
   --main-background-color: #ffffff;
   --dark-background-color: #2f303a;
   --light-background-color: #f5f4fa;
+  /* gaps */
+  --card-gap: 30px;
 }
 
 body {
@@ -23,18 +25,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.header,
-.footer,
-.advantages,
-.technologies,
-.services,
-.team,
-.footer {
-  /* padding-left: 200px;
-  padding-right: 200px;
-  margin: 0; */
 }
 
 .container {
@@ -200,8 +190,8 @@ img {
   width: 270px;
 }
 
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
+.advantages-item {
+  margin-right: var(--card-gap);
 }
 
 .advantages-text {
@@ -214,6 +204,8 @@ img {
 
 .advantages-list {
   display: flex;
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-right: calc(-1 * var(--card-gap));
 }
 
 /*------------- TECHNOLOGIES ------------- */
@@ -235,10 +227,12 @@ img {
 
 .technologies-list {
   display: flex;
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-right: calc(-1 * var(--card-gap));
 }
 
-.technologies-item:not(:last-child) {
-  margin-right: 30px;
+.technologies-item {
+  margin-right: var(--card-gap);
 }
 
 /*----------------- TEAM -------------------*/
@@ -279,11 +273,8 @@ img {
 
 .team-list {
   display: flex;
-  margin-right: -30px;
-}
-
-.team-item {
-  margin-right: 30px;
+  margin-right: calc(-1 * var(--card-gap));
+  flex-basis: calc(100% / 4 - var(--card-gap));
 }
 
 .team-item {
@@ -292,7 +283,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc(100% - 90px / 4);
+  margin-right: var(--card-gap);
 }
 
 /*---------------- PROJECTS --------------- */
@@ -351,9 +342,9 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-  flex-basis: calc(100% - 90px / 3);
+  margin-left: calc(-1 * var(--card-gap));
+  margin-bottom: calc(-1 * var(--card-gap));
+  flex-basis: calc(100% / 3 - var(--card-gap));
 }
 
 .projects-item {
@@ -366,8 +357,8 @@ img {
 }
 
 .projects-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: var(--card-gap);
+  margin-bottom: var(--card-gap);
 }
 
 .projects-name {
