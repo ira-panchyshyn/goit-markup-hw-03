@@ -20,7 +20,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="/" class="logo"
+          <a href="/" class="logo logo-header"
             ><span class="logo-left">Web</span
             ><span class="logo-right-dark">Studio</span></a
           >
@@ -61,16 +61,12 @@
       </div>
     </header>
     <main>
-      <section class="section services">
-        <div class="container services-container">
+      <section class="services">
+        <div class="container">
           <h1 class="services-title">
             Эффективные решения для<br />вашего бизнеса
           </h1>
-          <input
-            class="services-button"
-            type="button"
-            value="Заказать услугу"
-          />
+          <button class="services-button" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Advantages-->
@@ -132,23 +128,31 @@
           <ul class="list team-list">
             <li class="team-item">
               <img src="./images/team-member1.jpg" alt="Igor" />
-              <h3 class="team-member">Игорь Демьяненко</h3>
-              <p class="paragraph-common team-role">Product Designer</p>
+              <div class="team-card-bottom">
+                <h3 class="team-member">Игорь Демьяненко</h3>
+                <p class="paragraph-common team-role">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team-member2.jpg" alt="Olga" />
-              <h3 class="team-member">Ольга Репина</h3>
-              <p class="paragraph-common team-role">Frontend Developer</p>
+              <div class="team-card-bottom">
+                <h3 class="team-member">Ольга Репина</h3>
+                <p class="paragraph-common team-role">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team-member3.jpg" alt="Nikolay" />
-              <h3 class="team-member">Николай Тарасов</h3>
-              <p class="paragraph-common team-role">Marketing</p>
+              <div class="team-card-bottom">
+                <h3 class="team-member">Николай Тарасов</h3>
+                <p class="paragraph-common team-role">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team-member4.jpg" alt="Michail" />
-              <h3 class="team-member">Михаил Ермаков</h3>
-              <p class="paragraph-common team-role">UI Designer</p>
+              <div class="team-card-bottom">
+                <h3 class="team-member">Михаил Ермаков</h3>
+                <p class="paragraph-common team-role">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -156,11 +160,13 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <address class="footer-address">
+        <div class="footer-logo">
           <a href="/" class="logo"
             ><span class="logo-left">Web</span
             ><span class="logo-right-light">Studio</span></a
           >
+        </div>
+        <address class="footer-address">
           <ul class="list footer-list">
             <li class="footer-item">
               <a

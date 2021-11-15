@@ -58,6 +58,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 .logo-left {
@@ -125,7 +126,7 @@ img {
   color: var(--paragraph-text-color);
 }
 
-.logo {
+.logo-header {
   margin-right: 93px;
 }
 
@@ -133,11 +134,8 @@ img {
 
 .services {
   background-color: var(--dark-background-color);
-}
-
-.services-container {
-  padding-top: 106px;
-  padding-bottom: 106px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .services-title {
@@ -188,7 +186,7 @@ img {
   width: 270px;
 }
 
-.advantages-item {
+.advantages-item:not(:last-child) {
   margin-right: var(--card-gap);
 }
 
@@ -200,7 +198,6 @@ img {
 .advantages-list {
   display: flex;
   flex-basis: calc(100% / 4 - var(--card-gap));
-  margin-right: calc(-1 * var(--card-gap));
 }
 
 /*------------- TECHNOLOGIES ------------- */
@@ -226,7 +223,7 @@ img {
   margin-right: calc(-1 * var(--card-gap));
 }
 
-.technologies-item {
+.technologies-item:not(:last-child) {
   margin-right: var(--card-gap);
 }
 
@@ -253,7 +250,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -265,17 +261,23 @@ img {
 
 .team-list {
   display: flex;
-  margin-right: calc(-1 * var(--card-gap));
   flex-basis: calc(100% / 4 - var(--card-gap));
 }
 
 .team-item {
   background-color: var(--main-background-color);
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
   margin-right: var(--card-gap);
+}
+
+.team-card-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*---------------- PROJECTS --------------- */
@@ -332,7 +334,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-gap));
-  margin-bottom: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
   flex-basis: calc(100% / 3 - var(--card-gap));
 }
 
@@ -346,8 +348,8 @@ img {
 }
 
 .projects-item {
-  margin-right: var(--card-gap);
-  margin-bottom: var(--card-gap);
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
 }
 
 .projects-name {
@@ -382,9 +384,13 @@ img {
 }
 
 .footer-list {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
