@@ -366,6 +366,7 @@ img {
 
 .footer-address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-common {
@@ -391,6 +392,6 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-logo {
+/* .footer-logo {
   margin-bottom: 20px;
-}
+} */
